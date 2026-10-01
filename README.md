@@ -14,6 +14,7 @@ tailored-cv/
 ├── references/
 │   ├── application.md
 │   ├── candidate-profile.md
+│   ├── job-sources.md
 │   ├── rendering.md
 │   └── writing.md
 └── scripts/
