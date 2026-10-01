@@ -16,7 +16,7 @@
     .jobrow { display: flex; justify-content: space-between; font-weight: bold; margin-top: 2.5pt; }
     ul { margin: 1pt 0 0 0; padding-left: 12pt; }
     li { margin: 0 0 1.1pt 0; text-align: justify; }
-    .skills p { margin: 0 0 1.5pt 0; }
+    .skills { margin: 0; text-align: left; }
   </style>
 </head>
 <body>
@@ -34,9 +34,7 @@
   {{ADDITIONAL_EXPERIENCE_BLOCKS}}
 
   <h2>Technical Skills</h2>
-  <div class="skills">
-    {{VERIFIED_SKILL_GROUPS}}
-  </div>
+  <p class="skills">{{VERIFIED_TECHNOLOGY_LIST}}</p>
 
   <h2>Education, Certifications &amp; Languages</h2>
   {{EDUCATION_CERTIFICATIONS_LANGUAGES}}

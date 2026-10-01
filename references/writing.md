@@ -21,7 +21,7 @@ Prefer a clear, conventional structure unless the user supplies a template:
 1. name, target role, and selected contact details;
 2. concise summary;
 3. professional experience in reverse chronological order;
-4. technical or professional skills;
+4. technical skills as a flat list of technologies;
 5. education, certifications, languages, or other relevant sections.
 
 Writing rules:
@@ -30,7 +30,9 @@ Writing rules:
 - Use metrics exactly as sourced and only in the role or employer context supported by the evidence.
 - Keep each bullet focused on one achievement or responsibility.
 - Match important vacancy terminology only when it truthfully describes verified experience.
-- List only verified skills. Reorder a verified skill to match the vacancy; never add a skill for keyword coverage alone.
+- In `Technical Skills`, list only verified technologies in one flat, comma-separated line. Do not add categories, labels, subheadings, explanations, or environment descriptions such as `Virtualization:`, `Cloud:`, or `Linux & Bare metal`.
+- Order technologies from most to least important for the target vacancy: explicit must-haves and repeatedly emphasized technologies first, then relevant supporting technologies, then the least relevant ones. When relevance is equal, prefer the technologies supported by the strongest and most recent evidence.
+- Preserve exact technology and product names. Omit generic context such as `bare metal` when it is not a technology, and never add a technology for keyword coverage alone.
 - Preserve chronology. If achievements cannot be assigned to individual roles within one employer, use a company-level achievements block and list role progression separately.
 - Do not claim knowledge of a tool because the candidate used a similar tool. Describe the transferable adjacent experience instead.
 - Avoid internal jargon that a recruiter cannot interpret.
