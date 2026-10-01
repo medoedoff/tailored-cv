@@ -27,7 +27,7 @@ Use this order when content does not fit:
 4. use an additional page if the requested format permits it;
 5. reduce typography only while it remains comfortably readable.
 
-For an A4 CV, do not go below 9 pt body text unless the user explicitly approves a smaller size. Do not hide overflow, clip text, or shrink content solely to satisfy a page-count target.
+The bundled A4 template uses 8.8 pt body text and 1.18 line height. Preserve those values by default. If an explicitly requested one-page CV still overflows after content and spacing edits, body text may be reduced to 8.5 pt with 1.15 line height, but never below 8.5 pt. Do not hide overflow or clip text to satisfy a page-count target.
 
 ## Verification
 

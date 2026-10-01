@@ -2,72 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{FULL_NAME}} — {{TARGET_ROLE}}</title>
   <style>
-    @page { size: A4; margin: 12mm 14mm; }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      color: #111;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 9.5pt;
-      line-height: 1.3;
-    }
-    header { text-align: center; margin-bottom: 8pt; }
-    h1 { margin: 0 0 2pt; font-size: 18pt; line-height: 1.1; }
-    .target { margin: 0 0 3pt; font-size: 10.5pt; font-weight: 700; }
-    .contact { margin: 0; font-size: 8.8pt; }
-    a { color: inherit; text-decoration: underline; }
-    h2 {
-      margin: 8pt 0 3pt;
-      padding-bottom: 1pt;
-      border-bottom: 0.7pt solid #222;
-      font-size: 10pt;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-    }
-    p { margin: 0 0 3pt; }
-    .employer { margin-top: 5pt; font-weight: 700; }
-    .role-row {
-      display: flex;
-      justify-content: space-between;
-      gap: 12pt;
-      margin-top: 3pt;
-      font-weight: 700;
-    }
-    .role-row span:last-child { white-space: nowrap; }
-    ul { margin: 2pt 0 0; padding-left: 14pt; }
-    li { margin: 0 0 2pt; }
-    .skills p { margin-bottom: 2pt; }
-    .label { font-weight: 700; }
+    @page { size: A4; margin: 11mm 13mm 9mm 13mm; }
+    body { font-family: "Liberation Serif", "Times New Roman", serif; font-size: 8.8pt; line-height: 1.18; color: #000; margin: 0; }
+    .name { text-align: center; font-size: 16.5pt; font-weight: bold; margin: 0 0 1pt 0; }
+    .role { text-align: center; font-size: 10.3pt; font-weight: bold; margin: 0 0 2pt 0; }
+    .contact { text-align: center; font-size: 8.2pt; margin: 0 0 6pt 0; }
+    .contact a { color: #0000cc; }
+    h2 { font-size: 9.4pt; font-weight: bold; text-transform: uppercase; border-bottom: 0.6pt solid #000; margin: 6pt 0 2.5pt 0; padding-bottom: 0.5pt; letter-spacing: 0.2pt; }
+    p { margin: 0 0 2pt 0; text-align: justify; }
+    .company { font-weight: bold; margin-top: 3pt; }
+    .jobrow { display: flex; justify-content: space-between; font-weight: bold; margin-top: 2.5pt; }
+    ul { margin: 1pt 0 0 0; padding-left: 12pt; }
+    li { margin: 0 0 1.1pt 0; text-align: justify; }
+    .skills p { margin: 0 0 1.5pt 0; }
   </style>
 </head>
 <body>
-  <header>
-    <h1>{{FULL_NAME}}</h1>
-    <p class="target">{{TARGET_ROLE_AND_VERIFIED_KEYWORDS}}</p>
-    <p class="contact">{{SELECTED_CONTACT_DETAILS}}</p>
-  </header>
+  <div class="name">{{FULL_NAME}}</div>
+  <div class="role">{{TARGET_ROLE_AND_VERIFIED_KEYWORDS}}</div>
+  <div class="contact">{{SELECTED_CONTACT_DETAILS}}</div>
 
-  <section>
-    <h2>Summary</h2>
-    <p>{{SUMMARY}}</p>
-  </section>
+  <h2>Summary</h2>
+  <p>{{SUMMARY}}</p>
 
-  <section>
-    <h2>Professional Experience</h2>
-    {{EXPERIENCE_BLOCKS}}
-  </section>
+  <h2>Professional Experience</h2>
+  <div class="company">{{EMPLOYER_NAME}} | {{EMPLOYER_LOCATION_OR_WORK_MODE}} &middot; {{EMPLOYMENT_DATES}}</div>
+  <div class="jobrow"><span>{{JOB_TITLE}}</span><span>{{ROLE_DATES}}</span></div>
+  <ul><li>{{VERIFIED_ACHIEVEMENT}}</li></ul>
+  {{ADDITIONAL_EXPERIENCE_BLOCKS}}
 
-  <section class="skills">
-    <h2>Skills</h2>
+  <h2>Technical Skills</h2>
+  <div class="skills">
     {{VERIFIED_SKILL_GROUPS}}
-  </section>
+  </div>
 
-  <section>
-    <h2>Education and Credentials</h2>
-    {{EDUCATION_CERTIFICATIONS_LANGUAGES}}
-  </section>
+  <h2>Education, Certifications &amp; Languages</h2>
+  {{EDUCATION_CERTIFICATIONS_LANGUAGES}}
 </body>
 </html>
